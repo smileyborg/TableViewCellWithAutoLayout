@@ -7,7 +7,7 @@ Sample project demonstrating manual implementation of auto sizing cells using Au
 
 This sample project displays a table view with cells that each contain a single-line title label and a multi-line body label (each cell's body label displays a random number of lorem ipsum words).
 
-This project utilizes the open source [UIView+AutoLayout API](https://github.com/smileyborg/UIView-AutoLayout) to easily set up constraints in code.
+This project utilizes the open source [PureLayout](https://github.com/smileyborg/PureLayout) library to easily set up constraints in code.
 
 See the original post on Stack Overflow for more info:
 
