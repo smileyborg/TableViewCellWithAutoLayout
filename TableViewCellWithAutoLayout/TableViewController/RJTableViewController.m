@@ -179,9 +179,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
     cell.titleLabel.text =  [dataSourceItem valueForKey:@"title"];
     cell.bodyLabel.text = [dataSourceItem valueForKey:@"body"];
     
+    // Make sure all views are where they belong (accessory view visible or not)
+    [cell layoutSubviews];
+    
     // Make sure the constraints have been added to this cell, since it may have just been created from scratch
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
+    [cell updateConstraints];
     
     // The cell's width must be set to the same size it will end up at once it is in the table view.
     // This is important so that we'll get the correct height for different table view widths, since our cell's
