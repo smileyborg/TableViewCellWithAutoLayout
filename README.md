@@ -5,7 +5,7 @@ TableViewCellWithAutoLayout
 
 Sample project demonstrating manual implementation of auto sizing cells using Auto Layout in UITableViewCell to achieve dynamic layouts with variable row heights. This project is a universal app that will run on iPhone and iPad. This implementation is compatible with both iOS 7 and iOS 8.
 
-To build & run the app, open the `TableViewCellWithAutoLayout.xcworkspace`.
+To build & run the app, you should open the `TableViewCellWithAutoLayout.xcworkspace` in Xcode.
 
 This sample project displays a table view with cells that each contain a single-line title label and a multi-line body label (each cell's body label displays a random number of lorem ipsum words).
 
