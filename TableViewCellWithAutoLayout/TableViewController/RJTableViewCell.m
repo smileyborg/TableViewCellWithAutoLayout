@@ -74,7 +74,7 @@
         //      See here for further discussion: https://github.com/Alex311/TableCellWithAutoLayout/commit/bde387b27e33605eeac3465475d2f2ff9775f163#commitcomment-4633188
         // self.contentView.bounds = CGRectMake(0.0f, 0.0f, 99999.0f, 99999.0f);
         
-        [UIView autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
             [self.titleLabel autoSetContentCompressionResistancePriorityForAxis:ALAxisVertical];
         }];
         [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:kLabelVerticalInsets];
@@ -88,7 +88,7 @@
         // See https://github.com/smileyborg/TableViewCellWithAutoLayout/issues/3 for more info.
         [self.bodyLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.titleLabel withOffset:kLabelVerticalInsets relation:NSLayoutRelationGreaterThanOrEqual];
         
-        [UIView autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
             [self.bodyLabel autoSetContentCompressionResistancePriorityForAxis:ALAxisVertical];
         }];
         [self.bodyLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:kLabelHorizontalInsets];
