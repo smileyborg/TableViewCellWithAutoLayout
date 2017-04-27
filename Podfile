@@ -1,1 +1,3 @@
-pod 'PureLayout'
+target 'TableViewCellWithAutoLayout' do
+  pod 'PureLayout'
+end
